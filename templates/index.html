@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Visualization Dashboard - 2018 Yelp Reviews</title>
+
+        <!-- Bootstrap Stylesheet-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Own CSS stylesheet-->
+        <link rel="stylesheet" href="static/css/style.css" media="screen">
+    
+    </head>
+    <body>
+        <nav class="navbar-custom">
+            <div class="container">
+                <div class="row">
+                    <div class = "col-md-8">
+                        <a class="navbar-brand" id="logo">
+                            
+                        </a>
+                    </div>
+                    <div class = "col-md-4">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualization</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/wordclouds">Word Clouds</a>
+                                    <a class="dropdown-item" href="/sentiment">Sentiment Analysis</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container">
+            <section class="row">
+                <article class="col-md-12">
+                    <div class="description-content">
+                        <h1 class="description-header">2018 Yelp Reviews Visualization</h1>
+                        <hr class="description-hr"/>
+                        <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/styleguide/ea6185261f17/assets/img/brand_guidelines/fuoy.png"
+                            alt="figure 1" id="description-image" />
+                        <p>The purpose of this project was to visualize top words used by people and to show the negativity/subjectivity of Yelp reviews for 2018.</p>
+                        <p>The original dataset included more than 10 years of data and over 6.6M reviews. However, the entire dataset was too big to be handled on my local computer. The dataset was then reduced to the most recent year 2018 which included over 1.1M reviews for the data cleaning and analysis purpose. However, 1.1M data points were too big to be plotted on my local computer for the visualization purpose. The dataset was further reduced to 50% of 1.1M reviews for visualization purpose. Each review was cleaned and categorized as negative, positive and neutral words to create the word clouds. The sentiment analysis for polariy and subjectivity were categorized based on the star ratings. </p>
+                        <p>Data source: <a target="_blank" href="https://www.kaggle.com/yelp-dataset/yelp-dataset">www.kaggle.com</a></p>
+                        <p>Data cleaning/analysis technique reference: <a target="_blank" href="https://github.com/adashofdata/nlp-in-python-tutorial">www.github.com</a>
+                        </div>
+                    </article>
+            </section>
+        </section>
+        <footer class="footer navbar-fixed-bottom">
+            <div class="two-toned-footer-color">
+                <p class="text-muted-footer text-center">Christine So - April 2020</p>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
+
+  
+</html>
